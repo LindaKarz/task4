@@ -1,0 +1,5 @@
+{
+  "port": 5000,
+  "jwtSecret": "intransition",
+  "mongoUri": "mongodb+srv://linda:1234@cluster0.qdhrjjp.mongodb.net/?retryWrites=true&w=majority"
+}
