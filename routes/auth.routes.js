@@ -92,4 +92,15 @@ router.post(
 
 })
 
+router.get(
+  '/home', 
+  async (req, res) => {
+try {
+  const users = await User.find({})
+  res.json(users)
+  console.log(users)
+} catch(e) {
+  res.status(500).json({message: 'Something went wrong. Try again.'})
+}})
+
 module.exports = router

@@ -1,10 +1,10 @@
-import React from "react"
+import React, { useState } from "react"
 import { Routes, Route, Navigate } from "react-router-dom"
 import Home from './pages/Home'
 import { AuthPage } from "./pages/AuthPage"
 
-
 export default function useRoutes(isAuth) {
+  const [error] = useState()
   if(isAuth) {
     return (
         <Routes>
